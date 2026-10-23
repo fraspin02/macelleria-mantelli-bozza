@@ -158,4 +158,17 @@ address{font-style:normal;font-size:1.2rem;margin:20px 0 14px;line-height:1.7;co
   .foot-in{flex-direction:column;padding-bottom:84px}
   .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:60;align-items:center;justify-content:center;min-height:52px;background:var(--red);color:#fff;font-family:var(--head);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35);border-radius:2px}
 }
+
+.names{font-size:.95rem;color:#cdbfb1;margin:0 0 28px!important}
+.names b{color:#fff;font-weight:600}
+.fixed{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fx{background:#fff;border:2px solid var(--ink);border-top:6px solid var(--red);padding:24px 22px;display:flex;flex-direction:column}
+.fx h3{font-size:1.3rem;margin-bottom:14px}
+.fx h3 small{display:block;font-family:var(--body);font-size:.85rem;font-weight:600;text-transform:none;letter-spacing:0;color:var(--red);margin-top:4px}
+.fx ul{list-style:none;padding:0;display:grid;gap:8px;font-size:.96rem;flex:1}
+.fx li{padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.fx-price{font-family:var(--head);font-size:2.4rem;font-weight:700;color:var(--red);line-height:1;margin-top:18px}
+.fx-foot{margin-top:18px;color:var(--mute);font-size:.95rem}
+@media (max-width:900px){.fixed{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.fixed{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
