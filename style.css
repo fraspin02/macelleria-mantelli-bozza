@@ -255,7 +255,9 @@ address{font-style:normal;font-size:1.2rem;margin:20px 0 14px;line-height:1.7;co
 @media (max-width:900px){
   .posts{grid-template-columns:repeat(2,1fr);gap:10px}
   .brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  .brand-logo{width:50px;height:50px}
+  .brand-logo{width:64px;height:64px;box-shadow:0 0 0 2px rgba(255,255,255,.18)}
+  .top-in{height:78px;grid-template-columns:48px 1fr 48px}
+  .burger,.phone-ico{width:48px;height:48px}
   .social-btns .btn{flex:1}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
