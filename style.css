@@ -238,4 +238,24 @@ address{font-style:normal;font-size:1.2rem;margin:20px 0 14px;line-height:1.7;co
   .map{height:260px;margin-top:36px}
   .foot-grid{flex-direction:column;gap:20px}
 }
+
+/* social */
+.sec-paper{background:var(--paper-2)}
+.sec-head-row{max-width:none;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.sec-head-row>div:first-child{max-width:620px}
+.social-btns{display:flex;gap:12px;flex-wrap:wrap}
+.posts{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.posts a{display:block;position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ink)}
+.posts img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.posts a:hover img{transform:scale(1.05)}
+.p-meta{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 12px;background:linear-gradient(transparent,rgba(22,18,15,.88));color:#fff;display:flex;flex-direction:column;gap:2px}
+.p-meta b{font-family:var(--head);text-transform:uppercase;letter-spacing:.03em;font-weight:500;font-size:.95rem;line-height:1.15}
+.p-meta i{font-style:normal;font-size:.75rem;color:#ffb3b6;letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:1100px){.posts{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:900px){
+  .posts{grid-template-columns:repeat(2,1fr);gap:10px}
+  .brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .brand-logo{width:50px;height:50px}
+  .social-btns .btn{flex:1}
+}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
