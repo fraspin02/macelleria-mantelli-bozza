@@ -5,8 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Macelleria Mantelli | Carne selezionata, tartare, pranzo e cena a Prato</title>
 <meta name="description" content="Macelleria Mantelli a Prato, in via Zelindo Mannelli 27: carne selezionata, 22 tartare, porchetta, steak frollate in casa. Pranzo e cena in macelleria, anche su prenotazione.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Macelleria Mantelli">
+<meta property="og:title" content="Macelleria Mantelli, Prato: carne selezionata, tartare, pranzo e cena">
+<meta property="og:description" content="Il banco del macellaio la mattina, il tavolo a pranzo e a cena. 22 tartare, porchetta, steak frollate. Via Zelindo Mannelli 27, Prato.">
+<meta property="og:image" content="https://fraspin02.github.io/macelleria-mantelli-bozza/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://fraspin02.github.io/macelleria-mantelli-bozza/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#16120f">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Macelleria Mantelli","description":"Macelleria con pranzo e cena in locale: carne selezionata, tartare, porchetta, steak frollate.","image":"https://fraspin02.github.io/macelleria-mantelli-bozza/img/og.jpg","telephone":"+39 0574 061553","email":"macelleriamantelli@gmail.com","servesCuisine":["Carne","Tartare","Porchetta"],"address":{"@type":"PostalAddress","streetAddress":"Via Zelindo Mannelli 27","postalCode":"59100","addressLocality":"Prato","addressRegion":"PO","addressCountry":"IT"},"sameAs":["https://www.instagram.com/macelleriamantelli/","https://www.facebook.com/macelleriamantelli"]}
+</script>
 <link rel="preload" href="fonts/oswald-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/costata-800.jpg" as="image" media="(min-width:900px)">
+<link rel="preload" href="img/costata-800.jpg" as="image">
 <link rel="icon" href="favicon.jpg" type="image/jpeg">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,18 +29,22 @@
 
 <header class="top">
   <div class="wrap top-in">
-    <a class="brand" href="#" aria-label="Macelleria Mantelli, home">
-      <img src="img/logo-160.jpg" width="48" height="48" alt="" class="brand-logo">
+    <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    <a class="brand" href="#" aria-label="Macelleria Mantelli, inizio pagina">
+      <img src="img/logo-160.jpg" width="48" height="48" alt="Logo Macelleria Mantelli" class="brand-logo">
       <span class="brand-name">Macelleria<b>Mantelli</b></span>
     </a>
-    <nav class="nav" aria-label="Principale">
+    <nav class="nav" id="nav" aria-label="Principale">
       <a href="#banco">Il banco</a>
       <a href="#tartare">Tartare</a>
       <a href="#cene">Pranzo e cena</a>
-      <a href="#feste">Feste</a>
+      <a href="#feste">Serate</a>
       <a href="#dove">Dove siamo</a>
     </nav>
     <a class="btn btn-red top-cta" href="tel:0574061553">Chiama <span>0574 061553</span></a>
+    <a class="phone-ico" href="tel:0574061553" aria-label="Chiama 0574 061553">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    </a>
   </div>
 </header>
 
@@ -108,9 +126,11 @@
       <p class="names"><b>Alcune delle nostre:</b> 24 Karati · Mugnegno · Toscanaccia · Pulcinella · Tartufata · Ciao Nini</p>
       <a class="btn btn-red" href="tel:0574061553">Prenota per la tartare</a>
     </div>
-    <div class="split-photos">
-      <img src="img/burger-800.jpg" width="800" height="1067" loading="lazy" alt="Hamburger con patatine servito al tavolo, con il banco della macelleria sullo sfondo">
-      <img class="shift" src="img/panino-700.jpg" width="700" height="1244" loading="lazy" alt="Panino con sugo di carne e peperoni">
+    <div class="gallery">
+      <figure><img src="img/tartare-taco.jpg" width="541" height="473" loading="lazy" alt="Tartare di manzo servita in un taco croccante"><figcaption>Tartare in taco</figcaption></figure>
+      <figure><img src="img/burger-800.jpg" width="800" height="1067" loading="lazy" alt="Hamburger con patatine servito al tavolo, con il banco della macelleria sullo sfondo"><figcaption>Hamburger</figcaption></figure>
+      <figure><img src="img/panino-700.jpg" width="700" height="1244" loading="lazy" alt="Panino con sugo di carne e peperoni"><figcaption>Panino caldo</figcaption></figure>
+      <div class="gal-tile"><b>22</b><span>ricette di tartare,<br>dalla classica alla più ricca</span></div>
     </div>
   </div>
 </section>
@@ -152,17 +172,22 @@
 <section class="sec sec-red" id="feste">
   <div class="wrap split split-r">
     <div class="split-text">
-      <p class="kicker">Eventi</p>
-      <h2>Festeggia il tuo compleanno in maniera speciale</h2>
-      <p>Compleanni, serate a tema e cene tra amici nel locale: contattateci per informazioni e preventivi.</p>
+      <p class="kicker">Serate ed eventi</p>
+      <h2>Festeggia in maniera speciale</h2>
+      <p>Compleanni, serate a tema, cene speciali e feste della birra: in macelleria si organizza. Per informazioni e preventivi scriveteci o chiamateci.</p>
       <div class="hero-cta">
         <a class="btn btn-light" href="https://wa.me/393475403727">Scrivi su WhatsApp</a>
         <a class="btn btn-ghost-light" href="tel:0574061553">Chiama</a>
       </div>
     </div>
     <div class="event-box">
-      <p class="event-big">Halloween</p>
-      <p>in macelleria: addobbi, bambini in maschera e tanta allegria. Seguiteci su Instagram per le prossime serate.</p>
+      <p class="event-big">Cosa organizziamo</p>
+      <ul class="event-list">
+        <li><b>Serate a tema</b><span>con menu dedicato</span></li>
+        <li><b>Compleanni</b><span>su prenotazione</span></li>
+        <li><b>Feste della birra</b><span>con i birrifici amici</span></li>
+      </ul>
+      <p class="note-light">Le prossime date sono su Instagram.</p>
       <a href="https://www.instagram.com/macelleriamantelli/" class="link-ig">@macelleriamantelli · 7.200 follower</a>
     </div>
   </div>
@@ -175,15 +200,20 @@
       <h2>Carne, tartare e servizio: i clienti li notano</h2>
     </header>
     <div class="reviews">
-      <div class="score">
-        <b>4,7</b>
-        <span class="stars" aria-label="4,7 stelle su 5">★★★★★</span>
-        <small>su Tripadvisor<br>3° su 14 locali di Prato</small>
+      <div class="scores">
+        <div class="score"><b>4,6</b><span class="stars" aria-label="4,6 stelle su 5">★★★★★</span><small>su Google<br>77 recensioni</small></div>
+        <div class="score"><b>92%</b><span class="stars" aria-hidden="true">consigliano</span><small>su Facebook<br>8 recensioni</small></div>
       </div>
-      <blockquote>
-        <p>Qualità della carne, varietà delle tartare e servizio: i punti che ricorrono nelle recensioni dei clienti.</p>
-        <cite>Recensioni su Tripadvisor</cite>
-      </blockquote>
+      <div class="quotes">
+        <blockquote>
+          <p>“Ciccia favolosa dalle tartare alla porchetta, insomma cotto o crudo non fa differenza: tutta di alta qualità.”</p>
+          <cite>Anna G. · Facebook</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Sinceramente era stupendo, il più buono che abbia mangiato.” <span>(sull'hamburger alla festa della birra)</span></p>
+          <cite>Manuela S. · Facebook</cite>
+        </blockquote>
+      </div>
     </div>
   </div>
 </section>
@@ -218,17 +248,39 @@
       <p class="note">Orari da confermare insieme.</p>
     </div>
   </div>
+  <div class="wrap">
+    <iframe class="map" title="Mappa: Macelleria Mantelli, Via Zelindo Mannelli 27, Prato" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Macelleria+Mantelli+Via+Zelindo+Mannelli+27+Prato&amp;output=embed"></iframe>
+  </div>
 </section>
 
 </main>
 
 <footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-brand">Macelleria Mantelli</p>
+      <p>Via Zelindo Mannelli 27, 59100 Prato (PO)<br>Tel. <a href="tel:0574061553">0574 061553</a> · <a href="mailto:macelleriamantelli@gmail.com">macelleriamantelli@gmail.com</a></p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="https://www.instagram.com/macelleriamantelli/">Instagram</a></li>
+      <li><a href="https://www.facebook.com/macelleriamantelli">Facebook</a></li>
+      <li><a href="https://www.tripadvisor.it/Attraction_Review-g194868-d23659558-Reviews-Macelleria_Mantelli-Prato_Province_of_Prato_Tuscany.html">Tripadvisor</a></li>
+      <li><a href="https://deliveroo.it/it/menu/prato/prato/macelleria-mantelli">Deliveroo</a></li>
+    </ul>
+  </div>
   <div class="wrap foot-in">
-    <span>© 2026 Macelleria Mantelli · Via Zelindo Mannelli 27, Prato</span>
+    <span>© 2026 Macelleria Mantelli · Ragione sociale e P. IVA: da inserire</span>
     <span>Bozza di sito, solo parte grafica</span>
   </div>
 </footer>
 
-<a class="fab" href="tel:0574061553" aria-label="Chiama la macelleria">Chiama</a>
+<script>
+(function(){var b=document.querySelector('.burger'),n=document.getElementById('nav');if(!b||!n)return;
+function set(o){document.body.classList.toggle('nav-open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Chiudi il menu':'Apri il menu')}
+b.addEventListener('click',function(){set(!document.body.classList.contains('nav-open'))});
+n.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});})();
+</script>
+
 </body>
 </html>
